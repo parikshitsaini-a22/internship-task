@@ -9,8 +9,10 @@ Scanned Devices
 
 | Port  | Service     | Risk Level      | Recommendation                                                                                                                                 |
 |-------|-------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 21/tcp| FTP         | High            | Disable if not needed. Use SFTP/FTPS. Enforce strong authentication, restrict access, patch regularly. FTP transmits data in plaintext, making                                                           |                                         credentials easily interceptable by attackers.                                                                                                 
-| 53/tcp| Domain (DNS)| Moderate-High   | Ensure DNS server is properly secured. Disable zone transfers, restrict recursion, apply latest security patches, and monitor logs. Exposed DNS|       |                                         can be targeted for exploits, amplification attacks, or information gathering.                                                                 |
+| 21/tcp| FTP         | High            | Disable if not needed. Use SFTP/FTPS. Enforce strong authentication, restrict access, patch regularly. 
+FTP transmits data in plaintext, making credentials easily interceptable by attackers.                                                                                                
+| 53/tcp| Domain (DNS)| Moderate-High   | Ensure DNS server is properly secured. Disable zone transfers, restrict recursion, apply latest security patches, and monitor logs.
+Exposed DNS can be targeted for exploits, amplification attacks, or information gathering.                                                                 
 
 **Explanation:**
 - **Port 21 (FTP):** Standard FTP is highly insecure as it transmits credentials unencrypted. Open FTP ports are frequently targeted for anonymous access or brute-forcing.
@@ -20,9 +22,12 @@ Scanned Devices
 
 | Port    | Service       | Risk Level   | Recommendation                                                                                                                                 |
 |---------|---------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 135/tcp | MSRPC         | High         | Block externally if not required. Apply latest security patches. Segregate network, limit access to trusted hosts. Port used for Microsoft RPC;|     |                                          often abused in malware propagation and lateral movement.                                                                                      
-| 139/tcp | NetBIOS-SSN   | High         | Should not be accessible from untrusted networks. Disable if not in use, segment network, block on perimeter firewalls. NetBIOS can expose file|       |                                          sharing and authentication vulnerabilities.                                                                                                    
-| 445/tcp | Microsoft-DS  | High         | Critical to secure. Restrict access, patch, and disable SMBv1. Used for SMB file and printer sharing; frequent vector for ransomware and worms |                       |                                          (e.g., EternalBlue, WannaCry)
+| 135/tcp | MSRPC         | High         | Block externally if not required. Apply latest security patches. Segregate network, limit access to trusted hosts. 
+Port used for Microsoft RPC; often abused in malware propagation and lateral movement.                                                                                      
+| 139/tcp | NetBIOS-SSN   | High         | Should not be accessible from untrusted networks. Disable if not in use, segment network, block on perimeter firewalls. 
+NetBIOS can expose file sharing and authentication vulnerabilities.                                                                                                    
+| 445/tcp | Microsoft-DS  | High         | Critical to secure. Restrict access, patch, and disable SMBv1. 
+Used for SMB file and printer sharing; frequent vector for ransomware and worms (e.g., EternalBlue, WannaCry)                                                                                                                  
 
 **Explanation:**
 - **Ports 135, 139, 445:** All associated with Windows networking, remote management, and file sharing. 
