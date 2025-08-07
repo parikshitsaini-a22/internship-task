@@ -1,0 +1,69 @@
+Phishing Email Analysis Report     
+  
+Subject: "URGENT: Account Suspended – Immediate Action Required"
+From: "PayPal Security Team" support@paypalsecure-info.com
+To: [Recipient’s email]
+Date: August 5, 2025
+Body:
+Dear Customer,
+We have detected unauthorized login attempts on your PayPal account. For your security, your account has been temporarily suspended.
+To restore your account, please verify your identity by clicking the secure link below:
+👉 Click here to verify
+Failure to verify your identity within 24 hours will result in permanent account suspension.
+Thank you for choosing PayPal.
+• PayPal Security Team
+Attachment: Account_Verification_Form.pdf
+
+2. Sender Email Analysis
+• Display Name: PayPal Security Team
+• Actual Email: support@paypalsecure-info.com
+ Phishing Indicator:
+• The domain paypalsecure-info.com is not an official PayPal domain.
+• Trusted domains typically end in paypal.com, not something obscure or hyphenated.
+
+3.  Email Header Analysis
+Analyzed using: MxToolbox Email Header Analyzer
+Header Discrepancies Found:
+• SPF check failed: The sending server is not authorized to send on behalf of PayPal’s domain.
+• DKIM Signature: Missing.
+• Return-Path: A different email (e.g., bounce@unrelateddomain.com), not from PayPal.
+• IP Address: Linked to a known spam server in a different country.
+Phishing Indicator:
+• Email authentication failures (SPF, DKIM) and mismatched return-path are strong signs of spoofing.
+
+4.  Suspicious Links or Attachments
+Link:
+• Visible URL: http://paypal.secure-update-login.com
+• Actual destination: Not a PayPal domain, attempts to impersonate it.
+Attachment:
+• Account_Verification_Form.pdf (could contain malware or phishing form)
+Phishing Indicator:
+• Malicious or misleading URLs.
+• Unexpected attachments, especially asking for account verification.
+
+5.  Urgent or Threatening Language
+"URGENT: Account Suspended – Immediate Action Required"
+"Failure to verify… will result in permanent account suspension."
+Phishing Indicator:
+• Language creates fear and urgency to push the user into action without verifying authenticity.
+
+6. Mismatched URLs
+• Link Text: Says "Click here to verify"
+• Actual URL: http://paypal.secure-update-login.com
+ Phishing Indicator:
+• Hovering reveals a non-matching and suspicious URL—classic phishing behavior.
+
+7.  Spelling/Grammar Issues
+• Phrases like "clicking the secure link below" sound generic.
+• Slightly awkward grammar in: "Failure to verify your identity within 24 hours will result in permanent account suspension."
+ Phishing Indicator:
+• Professional companies (like PayPal) usually have high-quality, polished communications.
+
+Conclusion
+This email displays multiple classic phishing characteristics:
+• Spoofed sender address.
+• Suspicious link posing as a legitimate site.
+• Pressure through urgency and account suspension threats.
+• Potentially dangerous attachment.
+Recommendation:
+Mark the email as Phishing in your client, delete it, and report to the spoofed organization (e.g., phishing@paypal.com). Do not click links or download attachments.
