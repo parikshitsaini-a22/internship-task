@@ -1,0 +1,32 @@
+Basic Vulnerability Scan on Your PC
+
+Scan Tool: Nessus Essentials
+Scan Date: August 8, 2025
+Scan Target: 127.0.0.1 (Localhost)
+Total Vulnerabilities Found: 16
+• Critical: 2
+• High: 4
+• Medium: 5
+• Low/Info: 5
+
+Scan Result
+
+ Critical Vulnerabilities
+
+1. CVE-2021-34527 — Windows Print Spooler Remote Code Execution (PrintNightmare)
+• Severity: Critical
+• Description: Remote code execution vulnerability in Windows Print Spooler.
+• Affected System: Windows 10
+• Solution: Disable Print Spooler service if not needed; install Microsoft patch from July 2021.
+
+2.CVE-2023-23397 — Microsoft Outlook Privilege Escalation
+• Severity: Critical
+• Description: Exploitable via specially crafted emails.
+• Affected System: Microsoft Outlook (2016/2019)
+• Solution: Apply the official Microsoft security update from March 2023.
+
+ Fixes Implemented
+• Disabled unused services.
+• Installed pending Windows Updates.
+• Updated Microsoft Office.
+• Updated third-party applications.
