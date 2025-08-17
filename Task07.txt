@@ -1,0 +1,37 @@
+Suspicious Browser Extension Audit Report
+Date: 15 Aug 2025
+Browser Used: Google Chrome 127.0.6533.88
+
+1. Objective
+The purpose of this task was to review all installed browser extensions, identify any that may be suspicious, unused, or unnecessary, and remove them to improve browser security and performance.
+
+2. Steps Taken
+• Opened the Chrome menu → Extensions → Manage Extensions.
+• Reviewed the full list of installed extensions.
+• Checked each extension’s permissions, developer information, and recent reviews on the Chrome Web Store.
+• Compared installed extensions against known safe tools I use regularly.
+• Flagged extensions that had excessive permissions, no longer needed functionality, or questionable origins.
+• Removed flagged extensions.
+• Restarted the browser and monitored performance.
+
+3. Findings
+During the review, four extensions were installed. Two were legitimate and regularly used:
+• uBlock Origin – Verified safe, widely trusted ad-blocker.
+• Grammarly – Verified safe writing assistant.
+Two extensions were flagged for removal:
+• Quick PDF Converter Pro – Requested full access to all websites, had multiple negative reviews citing intrusive ads and tracking behavior.
+• WeatherTab – Displayed weather on new tabs but also injected unrelated ads, had questionable developer contact info.
+Both suspicious extensions were removed.
+
+4. Performance Changes
+After removal, browser startup time felt slightly faster, and the frequency of pop-up ads decreased. No unexpected redirects were observed during browsing.
+
+5. Risks of Malicious Browser Extensions
+Malicious or overly-permissive extensions can:
+• Inject ads or redirect traffic for profit.
+• Steal login credentials and session cookies.
+• Track user activity and sell browsing history.
+• Download additional malicious scripts.
+
+Conclusion
+The audit identified and removed two potentially harmful extensions, improving both security and performance. Regular review of installed browser extensions is critical to minimizing security risks, especially as legitimate-looking extensions can turn malicious after updates or developer changes.

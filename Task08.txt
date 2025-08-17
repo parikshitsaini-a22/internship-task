@@ -1,0 +1,41 @@
+VPN Setup and Privacy Report
+Date: 16 Aug 2025
+VPN Service Used: ProtonVPN (Free Tier)
+System: Windows 11 Home, Version 23H2
+
+1. Objective
+To install and configure a free VPN client on Windows 11, test its ability to encrypt internet traffic and change the public IP address, and evaluate the benefits and limitations of VPN usage.
+
+2. Steps Taken on Windows 11
+• Downloaded Client: Opened Microsoft Edge → Navigated to ProtonVPN.com → Downloaded ProtonVPN Windows installer.
+• Installation: Installed ProtonVPN client with default settings. Allowed it through Windows Security Firewall when prompted.
+• Login: Launched ProtonVPN and signed in using my free Proton account.
+• Connecting to VPN: From the main dashboard, selected a free server (Netherlands – Free #3) and clicked Connect. The app showed a green “Connected” status.
+• Verifying IP Address: Opened Edge → visited whatismyipaddress.com.
+• Before VPN: Displayed my ISP-assigned India-based IP.
+• After VPN: Displayed a Netherlands IP, confirming VPN masking.
+• Browsing Test: Accessed Wikipedia and YouTube. Pages loaded normally but video buffering was slightly slower compared to normal browsing.
+• Disconnect: Clicked Disconnect in ProtonVPN. Re-checked [whatismyipaddress.com] — IP reverted to ISP’s original address.
+
+3. Observations
+• IP Masking: Worked as expected — original IP successfully hidden.
+• Encryption: ProtonVPN free uses AES-256 encryption with OpenVPN/IKEv2 protocols, ensuring secure browsing.
+• Performance: Normal web browsing was fine, but streaming speed dropped slightly while connected.
+• Windows 11 Integration: VPN ran smoothly, minimized to taskbar, and worked with Windows 11 firewall without extra configuration.
+
+Research on VPN Encryption & Privacy
+• ProtonVPN free encrypts all traffic with AES-256 + 4096-bit RSA + SHA256.
+• Prevents ISP monitoring and packet sniffing on public Wi-Fi.
+• Protects against man-in-the-middle attacks by tunneling traffic securely.
+
+6. Benefits of VPNs (Windows 11 Context)
+• Secures traffic even on public Wi-Fi hotspots.
+• Helps bypass regional restrictions in browsers like Edge/Chrome.
+• Adds a privacy layer when Windows telemetry and tracking are a concern.
+7. Limitations of VPNs
+• Free servers often experience congestion, leading to slower speeds.
+• VPN provider must be trusted since all traffic passes through their servers.
+• Some apps (like banking software) may block VPN connections.
+
+Conclusion
+The VPN was successfully installed and tested on Windows 11. The IP address masking and traffic encryption were confirmed, and while there was a minor performance drop, the VPN significantly improved privacy and security.
